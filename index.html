@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Youssof "Dolph" Ahmed Aly — Portfolio</title>
-<meta name="description" content="Portfolio of Youssof &quot;Dolph&quot; Ahmed Aly — Computer Science graduate building projects in cybersecurity, machine learning and systems programming.">
-<meta property="og:title" content="Youssof &quot;Dolph&quot; Ahmed Aly — Portfolio">
+<title>Youssof Ahmed Aly — Portfolio</title>
+<meta name="description" content="Portfolio of Youssof Ahmed Aly — Computer Science graduate building projects in cybersecurity, machine learning and systems programming.">
+<meta property="og:title" content="Youssof Ahmed Aly — Portfolio">
 <meta property="og:description" content="Cybersecurity, machine learning and systems projects, with live simulations.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%A9%3C/text%3E%3C/svg%3E">
@@ -27,6 +27,26 @@ a:hover{color:var(--acc2)}
 nav{padding-top:calc(14px + env(safe-area-inset-top,0px)) !important}
 :root{--paper:#15112B;--card:#1F1940;--card2:#191436;--ink:#F1ECFF;--acc:#FF6AC1;--acc2:#9D8CFF;--accl:#FF6AC1;--ink-rgb:241,236,255;--acc-rgb:255,106,193;--acc2-rgb:157,140,255;--paper-rgb:21,17,43}
 html,body{transition:background-color .35s,color .35s}
+
+.arc{border-bottom:1.5px solid rgba(var(--ink-rgb),.2)}
+.arc summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:64px minmax(180px,1.1fr) 2fr 150px 24px;gap:16px;align-items:center;padding:20px 4px;font-size:.95rem}
+.arc summary::-webkit-details-marker{display:none}
+.arc summary:hover .at{color:var(--acc)}
+.arc summary:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.arc .ac{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--acc2)}
+.arc .at{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem;line-height:1.15}
+.arc .ao{color:rgba(var(--ink-rgb),.7);line-height:1.5}
+.arc .ak{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;border:1.5px solid var(--ink);padding:4px 8px;width:fit-content}
+.arc .ax{font-family:'JetBrains Mono',monospace;font-size:18px;text-align:center;transition:transform .2s}
+.arc[open] .ax{transform:rotate(45deg)}
+.arc .ab{padding:4px 4px 26px 80px}
+.chip{background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:8px 14px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;cursor:pointer}
+.chip span{opacity:.55}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.chip:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+@media(max-width:820px){.hl{display:none}.arc summary{grid-template-columns:48px 1fr 24px}.arc .ao,.arc .ak{display:none}.arc .ab{padding-left:4px}}
+
+@media(max-width:900px){.pcard{position:relative !important;top:auto !important;min-height:0 !important;padding:12vh 5vw 8vh !important}}
 </style>
 
 </head>
@@ -35,9 +55,9 @@ html,body{transition:background-color .35s,color .35s}
 
 <div id="pbar" style="position:fixed;top:0;left:0;right:0;height:3px;background:var(--acc2);transform:scaleX(0);transform-origin:left;z-index:900"></div>
 <nav data-screen-label="Nav" style="position:fixed;top:0;left:0;right:0;z-index:890;display:flex;justify-content:space-between;align-items:center;padding:14px 4vw;background:rgba(var(--paper-rgb),.92);backdrop-filter:blur(8px);border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em">
-  <a href="#top" style="color:var(--ink);font-weight:700">YOUSSOF "DOLPH" AHMED ALY — BENCH NOTES</a>
-  <div style="display:flex;gap:clamp(12px,2.5vw,28px);align-items:center">
-    <a href="#about" style="color:var(--ink)">ABOUT</a><a href="#flagship" style="color:var(--ink)">FLAGSHIP</a><a href="#projects" style="color:var(--ink)">PROJECTS</a><a href="#teardown" style="color:var(--ink)">TEARDOWNS</a><a href="#log" style="color:var(--ink)">LOG</a><span class="avail" style="color:var(--acc);font-weight:700">● AVAILABLE NOW</span><a href="#contact" style="background:var(--ink);color:var(--paper);padding:8px 16px">CONTACT ▸</a>
+  <a href="#top" style="color:var(--ink);font-weight:700">YOUSSOF AHMED ALY</a>
+  <div style="display:flex;gap:clamp(12px,2vw,24px);align-items:center">
+    <a class="hl" href="#about" style="color:var(--ink)">ABOUT</a><a class="hl" href="#education" style="color:var(--ink)">EDUCATION</a><a class="hl" href="#experience" style="color:var(--ink)">EXPERIENCE</a><a class="hl" href="#skills" style="color:var(--ink)">SKILLS</a><a class="hl" href="#projects" style="color:var(--ink)">PROJECTS</a><a href="Youssof_Ahmed_Aly_CV.pdf" download style="color:var(--acc);font-weight:700">CV ↓</a><a href="#contact" style="background:var(--ink);color:var(--paper);padding:8px 16px">CONTACT ▸</a>
   </div>
 </nav>
 
@@ -66,8 +86,9 @@ html,body{transition:background-color .35s,color .35s}
 </div>
 
 <section id="about" data-screen-label="About" style="padding:0 4vw 10vh;box-sizing:border-box">
-  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 01</span><span>ABOUT — WHERE SECURITY MEETS INTELLIGENCE</span></div>
+  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 01</span><span>SUMMARY — ABOUT ME</span></div>
   <p style="margin:0 0 5vh;max-width:980px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,3.6vw,3rem);line-height:1.15;letter-spacing:-.02em">Computer Science graduate on a dual degree — University of Northampton (UK) × AAST Egypt. I work where <span style="color:var(--acc)">security meets intelligence</span>: hardened backends, ML models, low-level tools.</p>
+  <p style="margin:0 0 5vh;max-width:760px;font-size:1.02rem;line-height:1.75;color:rgba(var(--ink-rgb),.75)">Cybersecurity &amp; AI intern at the MAHE–ISAC Centre of Excellence in Manipal, India. Graduation project in PPO reinforcement learning for HPC scheduling. Top 20% at the DeepX AI Competition (30 of 150 teams). Immediately available for roles in cybersecurity, data science / ML and software engineering.</p>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));border:1.5px solid var(--ink);background:var(--card)">
     <div style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--acc2);margin-bottom:10px">EDUCATION</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem;line-height:1.25">B.Sc. Computer Science</div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;line-height:1.7;margin-top:8px;color:rgba(var(--ink-rgb),.6)">UoN (UK) × AAST — 2022–2026<br>IGCSE, Ethos International School</div></div>
     <div style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--acc2);margin-bottom:10px">BASED IN</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.25rem;line-height:1.25">Sheikh Zayed, Egypt</div><div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;line-height:1.7;margin-top:8px;color:rgba(var(--ink-rgb),.6)">worked on-site in Manipal, India</div></div>
@@ -78,152 +99,135 @@ html,body{transition:background-color .35s,color .35s}
 <section data-screen-label="Proof strip" style="padding:0 4vw 10vh;box-sizing:border-box"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border:1.5px solid var(--ink);background:var(--card)">
 <div style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2.4rem;line-height:1;color:var(--acc2)">TOP 20%</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;line-height:1.7;margin-top:8px;color:rgba(var(--ink-rgb),.65)">DEEPX AI COMPETITION — 30 OF 150 TEAMS</div></div><div style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2.4rem;line-height:1;color:var(--acc2)">5</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;line-height:1.7;margin-top:8px;color:rgba(var(--ink-rgb),.65)">PERSON TEAM — PRIVGRAD GRADUATION PROJECT</div></div><div style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2.4rem;line-height:1;color:var(--acc2)">3 MO</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;line-height:1.7;margin-top:8px;color:rgba(var(--ink-rgb),.65)">ON-SITE CYBERSECURITY &amp; AI INTERNSHIP, INDIA</div></div><div style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2.4rem;line-height:1;color:var(--acc2)">8</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;line-height:1.7;margin-top:8px;color:rgba(var(--ink-rgb),.65)">BUILDS ACROSS SECURITY, ML, SYSTEMS, GAMES</div></div></div></section>
 
-<section id="flagship" data-screen-label="Flagship PrivGrad" style="padding:14vh 4vw;box-sizing:border-box">
-  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 02</span><span>FLAGSHIP — GRADUATION PROJECT · 5-PERSON TEAM · ACADEMIC SUPERVISION</span></div>
-  <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:8px 8px 0 rgba(var(--acc2-rgb),.25)">
-    <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em"><span style="font-weight:700">PRIVGRAD — AI-HPC SCHEDULER</span><span style="color:var(--acc)">● SIMULATION RUNNING</span></div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr))">
-      <div style="padding:clamp(24px,4vw,48px);border-right:1.5px solid rgba(var(--ink-rgb),.15)">
-        <h2 style="margin:0 0 3vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,3.8rem);line-height:1;letter-spacing:-.02em">A cluster scheduler that <span style="color:var(--acc)">learns</span>.</h2>
-        <p style="margin:0 0 3vh;max-width:480px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75)">Full-stack HPC cluster scheduling platform driven by PPO reinforcement learning — the agent watches queue state and node load, and learns placement policies that beat static heuristics. Built end-to-end: scheduler core, API, dashboard, and the "Circuit Board" teal–indigo design system carried across posters, banners, and slides.</p>
-        <div style="display:flex;flex-direction:column;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6">
-          <div><span style="color:var(--acc2)">▸ RL CORE</span> — PPO agent, gym-style cluster env, reward on wait-time + utilization</div>
-          <div><span style="color:var(--acc2)">▸ PLATFORM</span> — full-stack: scheduler service, REST API, live dashboard</div>
-          <div><span style="color:var(--acc2)">▸ IDENTITY</span> — Circuit Board design system: <span style="display:inline-flex;gap:4px;vertical-align:middle"><span style="width:12px;height:12px;background:var(--acc);display:inline-block"></span><span style="width:12px;height:12px;background:var(--acc2);display:inline-block"></span><span style="width:12px;height:12px;background:var(--ink);display:inline-block"></span></span> across posters, banners, slides</div>
-        </div>
-      </div>
-      <div style="display:flex;flex-direction:column">
-        <canvas id="vflag" style="display:block;width:100%;flex:1;min-height:320px"></canvas>
-        <div style="padding:12px 24px;border-top:1.5px solid rgba(var(--ink-rgb),.15);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:rgba(var(--ink-rgb),.55)">LIVE — PPO AGENT PLACING JOBS ON A 24-NODE GRID · REWARD CURVE TRENDS UP AS POLICY IMPROVES</div>
-      </div>
+<section id="education" data-screen-label="Education" style="padding:0 4vw 12vh;box-sizing:border-box">
+  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 02</span><span>EDUCATION</span></div>
+  <h2 style="margin:0 0 5vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1;letter-spacing:-.03em">Education<span style="color:var(--acc)"></span></h2>
+  <div style="border-top:1.5px solid var(--ink)">
+    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2022-10 → 2026-07<br><span style="color:rgba(var(--ink-rgb),.55)">DUAL AWARD</span></div>
+      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">B.Sc. Computer Science — University of Northampton (UK)</h3><p style="margin:0;max-width:640px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Dual award in partnership with the Arab Academy for Science, Technology &amp; Maritime Transport (AAST), Egypt. Graduation project: PrivGrad, a reinforcement-learning HPC scheduler, supervised by Dr. Mohamed Mostafa El Taweel.</p><p style="margin:12px 0 0;max-width:640px;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.8;letter-spacing:.04em;color:rgba(var(--ink-rgb),.6)">COURSEWORK — Cybersecurity, Computer System Security, Deep Learning, NLP, Digital Image Processing, Robotics Applications, Operating Systems, Data Structures &amp; Algorithms, Computer Networks, Database Systems, Computer Architecture, Software Engineering, Theory of Computation, Artificial Intelligence, Computer Graphics</p></div>
     </div>
+
+    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2017 → 2022<br><span style="color:rgba(var(--ink-rgb),.55)">ETHOS INTERNATIONAL SCHOOL</span></div>
+      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">High School Diploma (IGCSE)</h3><p style="margin:0;max-width:640px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">English-medium education; fluent English alongside native Arabic.</p></div>
+    </div>
+
   </div>
 </section>
+<section id="experience" data-screen-label="Experience" style="padding:0 4vw 12vh;box-sizing:border-box">
+  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 03</span><span>EXPERIENCE</span></div>
+  <h2 style="margin:0 0 5vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1;letter-spacing:-.03em">Experience<span style="color:var(--acc)"></span></h2>
+  <div style="border-top:1.5px solid var(--ink)">
+    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2025-07 → 2025-09<br><span style="color:rgba(var(--ink-rgb),.55)">MANIPAL, IN · VIA AIESEC</span></div>
+      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">Cybersecurity &amp; AI Intern — MAHE–ISAC Centre of Excellence</h3><p style="margin:0;max-width:640px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Built fingerprint identification and signature verification ML systems, and a hardened file upload service (MIME validation, ClamAV, HMAC-signed downloads, per-IP rate limiting) under the mentorship of Dr. Srikanth Prabhu. Selected internationally through AIESEC for a fully on-site placement; official completion certificate from MIT Manipal.</p></div>
+    </div>
 
-<section id="projects" data-screen-label="Projects" style="box-sizing:border-box">
-  <div style="padding:6vh 4vw 8vh">
-    <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 03</span><span>SELECTED WORK — EIGHT BUILDS</span></div>
-    <h2 style="margin:0 0 3vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.4rem,7vw,6rem);line-height:.98;letter-spacing:-.03em"><span style="display:block;overflow:hidden"><span class="rev" style="display:block;transform:translateY(110%)">Eight builds,</span></span><span style="display:block;overflow:hidden"><span class="rev" data-d="90" style="display:block;transform:translateY(110%);color:var(--acc)">running live.</span></span></h2>
-    <p style="max-width:520px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.7);margin:0">No screenshots. Each card runs a small live simulation of what the project does — illustrative, not recorded output.</p>
+    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2022-09 → 2023-01<br><span style="color:rgba(var(--ink-rgb),.55)">CAIRO, EG</span></div>
+      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">Teaching Assistant — Ethos International School</h3><p style="margin:0;max-width:640px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Supported classroom management and gave academic guidance to students who needed extra support.</p></div>
+    </div>
+
+    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2025<br><span style="color:rgba(var(--ink-rgb),.55)">TOP 30 / 150 TEAMS</span></div>
+      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">Achievement — DeepX AI Competition, Nile University</h3><p style="margin:0;max-width:640px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Top 20% of the field with a multi-aspect sentiment analysis NLP agent.</p></div>
+    </div>
+
   </div>
-  <article class="pcard" data-screen-label="Fingerprint Identification System" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
+</section>
+<section id="skills" data-screen-label="Skills" style="padding:0 4vw 12vh;box-sizing:border-box">
+  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 04</span><span>SKILLS</span></div>
+  <h2 style="margin:0 0 5vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1;letter-spacing:-.03em">Skills<span style="color:var(--acc)"></span></h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));border:1.5px solid var(--ink);border-right:none;border-bottom:none;background:var(--card)">
+<div class="fin" style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15);border-bottom:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--acc2);margin-bottom:12px">LANGUAGES</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2;letter-spacing:.03em">Python · C · C++ · Bash · JavaScript · TypeScript · SQL</div></div><div class="fin" style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15);border-bottom:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--acc2);margin-bottom:12px">CYBERSECURITY</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2;letter-spacing:.03em">Wireshark · Scapy · MIME validation · ClamAV · HMAC signing · secure file handling</div></div><div class="fin" style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15);border-bottom:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--acc2);margin-bottom:12px">AI / DATA SCIENCE</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2;letter-spacing:.03em">scikit-learn · OpenCV · Stable-Baselines3 (PPO) · sentiment analysis · deep learning · NLP · image processing</div></div><div class="fin" style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15);border-bottom:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--acc2);margin-bottom:12px">SYSTEMS &amp; TOOLS</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2;letter-spacing:.03em">Linux · Docker · Git · FastAPI · Celery · Redis · React · Streamlit · SQLite · SSH · Chart.js</div></div><div class="fin" style="padding:22px 24px;border-right:1.5px solid rgba(var(--ink-rgb),.15);border-bottom:1.5px solid rgba(var(--ink-rgb),.15)"><div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--acc2);margin-bottom:12px">EMBEDDED &amp; HARDWARE</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2;letter-spacing:.03em">Digital logic design · computer architecture · robotics applications</div></div>
+  </div>
+</section>
+<section id="projects" data-screen-label="Projects" style="box-sizing:border-box">
+  <div style="padding:0 4vw 8vh">
+    <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 05</span><span>PROJECTS — THREE FEATURED, SIX IN THE ARCHIVE</span></div>
+    <h2 style="margin:0 0 3vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.4rem,7vw,6rem);line-height:.98;letter-spacing:-.03em"><span style="display:block;overflow:hidden"><span class="rev" style="display:block;transform:translateY(110%)">Three builds,</span></span><span style="display:block;overflow:hidden"><span class="rev" data-d="90" style="display:block;transform:translateY(110%);color:var(--acc)">running live.</span></span></h2>
+    <p style="max-width:520px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.7);margin:0">The three I would show first. Each card runs a small live simulation of what the project does — illustrative, not recorded output. Everything else is in the archive below.</p>
+  </div>
+  <article class="pcard" data-screen-label="AI-Driven HPC Cluster Scheduler" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
     <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.01 — COMPUTER VISION / ML</div>
-      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Fingerprint Identification System</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Classifies fingerprint pattern types with image processing and machine learning — ridge extraction to model prediction. Built at the MAHE–ISAC internship in Manipal, India.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ INPUT</span> — fingerprint images</div><div><span style="color:var(--acc2)">▸ PIPELINE</span> — OpenCV image processing extracts ridge features, a scikit-learn model predicts the class</div><div><span style="color:var(--acc2)">▸ OUTPUT</span> — pattern type — arch, loop or whorl</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">OPENCV</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">SCIKIT-LEARN</span></div>
-      <a href="https://github.com/Dolphiny-1412/fingerprint-identification" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">F.01 — FEATURED · ML / REINFORCEMENT LEARNING</div>
+      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">AI-Driven HPC Cluster Scheduler</h3>
+      <p style="max-width:480px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Graduation project, team of 5. A full-stack HPC job scheduling platform driven by a PPO reinforcement-learning agent that learns placement policies to cut wait time and raise node utilisation. Supervised by Dr. Mohamed Mostafa El Taweel, AAST.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ RL CORE</span> — PPO agent (Stable-Baselines3) in a gym-style cluster environment</div><div><span style="color:var(--acc2)">▸ PLATFORM</span> — scheduler core, FastAPI REST API, Celery + Redis, live React/TypeScript dashboard</div><div><span style="color:var(--acc2)">▸ IDENTITY</span> — a “Circuit Board” teal–indigo design system across posters, banners and slides</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">FASTAPI</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CELERY</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">REDIS</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">REACT</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">TYPESCRIPT</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">STABLE-BASELINES3</span></div>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(var(--ink-rgb),.55)">PRIVATE REPO — CODE NOT YET PUBLIC</span>
     </div>
     <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.01 / RIDGE CLASSIFIER</span><span style="color:var(--acc)">● LIVE</span></div>
-      <canvas id="p1" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
+      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">F.01 / PPO SCHEDULER</span><span style="color:var(--acc)">● LIVE</span></div>
+      <canvas id="vflag" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
     </div>
   </article>
-  <article class="pcard" data-screen-label="Secure File Upload Service" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card2);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
+  <article class="pcard" data-screen-label="Cryptographic Protocol Analyzer" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card2);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
     <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.02 — APPLICATION SECURITY</div>
-      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Secure File Upload Service</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Vulnerable vs. hardened upload, side by side — an educational demo of how a file upload endpoint gets exploited and how to close each hole.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ VULNERABLE</span> — a baseline service that trusts whatever it is sent</div><div><span style="color:var(--acc2)">▸ HARDENED</span> — MIME sniffing, ClamAV scanning, HMAC-signed downloads, per-IP rate limiting, randomised storage</div><div><span style="color:var(--acc2)">▸ DELIVERY</span> — FastAPI service containerised with Docker</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">FASTAPI</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">DOCKER</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CLAMAV</span></div>
-      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(var(--ink-rgb),.55)">PRIVATE DEMO — ASK ME FOR A WALKTHROUGH</span>
-    </div>
-    <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.02 / UPLOAD GATE</span><span style="color:var(--acc)">● LIVE</span></div>
-      <canvas id="p2" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
-    </div>
-  </article>
-  <article class="pcard" data-screen-label="Cryptographic Protocol Analyzer" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.03 — NETWORK SECURITY</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">F.02 — FEATURED · NETWORK SECURITY</div>
       <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Cryptographic Protocol Analyzer</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Rule-based analyzer for PCAP/PCAPNG captures. Flags insecure protocols, deprecated SSLv3/TLS 1.0/1.1 handshakes and plaintext credential keywords, each rated Critical to Low with a fix.</p>
+      <p style="max-width:480px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Rule-based analyzer for PCAP/PCAPNG captures. Flags insecure protocols, deprecated SSLv3/TLS 1.0/1.1 handshakes and plaintext credential keywords, each rated Critical to Low with a fix.</p>
       <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ INPUT</span> — .pcap / .pcapng files parsed with Scapy (IPv4 TCP/UDP)</div><div><span style="color:var(--acc2)">▸ RULES</span> — port-based table (HTTP, FTP, Telnet, POP3, IMAP, SMTP, TFTP, SNMP, Syslog), payload keyword scan, TLS record-header check</div><div><span style="color:var(--acc2)">▸ OUTPUT</span> — severity-rated findings in a Streamlit + Plotly dashboard, a CLI, and CSV export</div><div><span style="color:var(--acc2)">▸ SCOPE</span> — university project; offline and heuristic — it does not decrypt TLS or inspect cipher suites</div></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">SCAPY</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">STREAMLIT</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PANDAS</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PLOTLY</span></div>
       <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(var(--ink-rgb),.55)">PRIVATE DEMO — ASK ME FOR A WALKTHROUGH</span>
     </div>
     <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.03 / PACKET TRIAGE</span><span style="color:var(--acc)">● LIVE</span></div>
+      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">F.02 / PACKET TRIAGE</span><span style="color:var(--acc)">● LIVE</span></div>
       <canvas id="p3" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
     </div>
   </article>
-  <article class="pcard" data-screen-label="Multi-Aspect Sentiment Agent" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card2);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
+  <article class="pcard" data-screen-label="Fingerprint Identification System" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
     <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.04 — NLP · DEEPX TOP 20%</div>
-      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Multi-Aspect Sentiment Agent</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Top 30 of 150 teams at the DeepX AI Competition, Nile University. An NLP agent that scores sentiment per aspect, not per sentence.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ TASK</span> — “battery is great but screen scratches” → positive battery, negative screen</div><div><span style="color:var(--acc2)">▸ RESULT</span> — top 20% of the field</div><div><span style="color:var(--acc2)">▸ NEXT</span> — Arabic NLP — an underexplored niche I read natively</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">NLP</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">SCIKIT-LEARN</span></div>
-      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(var(--ink-rgb),.55)">PRIVATE REPO</span>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">F.03 — FEATURED · ML / BIOMETRICS</div>
+      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Fingerprint Identification System</h3>
+      <p style="max-width:480px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Classifies fingerprint pattern types with image processing and machine learning — ridge extraction to model prediction. Built at the MAHE–ISAC internship in Manipal, India.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ INPUT</span> — fingerprint images</div><div><span style="color:var(--acc2)">▸ PIPELINE</span> — OpenCV image processing extracts ridge features, a scikit-learn model predicts the class</div><div><span style="color:var(--acc2)">▸ OUTPUT</span> — pattern type — arch, loop or whorl</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">OPENCV</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">SCIKIT-LEARN</span></div>
+      <a href="https://github.com/Dolphiny-1412/fingerprint-identification" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a>
     </div>
     <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.04 / ASPECT SENTIMENT</span><span style="color:var(--acc)">● LIVE</span></div>
-      <canvas id="p4" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
-    </div>
-  </article>
-  <article class="pcard" data-screen-label="Virtual File System" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.05 — SYSTEMS</div>
-      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Virtual File System</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">A full-featured file system you can drive from a command line, a GUI, or over SSH.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ INTERFACES</span> — CLI shell and a GUI over the same core</div><div><span style="color:var(--acc2)">▸ REMOTE</span> — SSH access to a running instance</div><div><span style="color:var(--acc2)">▸ OPERATIONS</span> — full file and directory operations</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">SSH</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CLI / GUI</span></div>
-      <a href="https://github.com/HamedElgizery/VirtualFileSystem" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a>
-    </div>
-    <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.05 / REMOTE SHELL</span><span style="color:var(--acc)">● LIVE</span></div>
-      <canvas id="p5" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
-    </div>
-  </article>
-  <article class="pcard" data-screen-label="SysMonitor" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card2);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.06 — OBSERVABILITY</div>
-      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">SysMonitor</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Real-time CPU/GPU/temperature monitor with a GUI, Markdown reports, and a live web dashboard.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ MONITORS</span> — CPU, GPU and temperature in real time</div><div><span style="color:var(--acc2)">▸ REPORTS</span> — Markdown reports plus a live Chart.js web dashboard</div><div><span style="color:var(--acc2)">▸ DELIVERY</span> — containerised with Docker</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">DOCKER</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CHART.JS</span></div>
-      <a href="https://github.com/HamedElgizery/SysMonitor" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a>
-    </div>
-    <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.06 / SYSTEM STATS</span><span style="color:var(--acc)">● LIVE</span></div>
-      <canvas id="p6" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
-    </div>
-  </article>
-  <article class="pcard" data-screen-label="Evil Dungeons" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.07 — GRAPHICS & GAME DEV</div>
-      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Evil Dungeons</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Dungeon-crawler with custom GLSL shaders and low-level graphics programming.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ GRAPHICS</span> — custom GLSL shaders written for the game</div><div><span style="color:var(--acc2)">▸ BUILD</span> — C++ project built with CMake</div><div><span style="color:var(--acc2)">▸ GENRE</span> — dungeon-crawler</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">C++</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">GLSL</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CMAKE</span></div>
-      <a href="https://github.com/waryoyo/EvilDungeons" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a>
-    </div>
-    <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.07 / TORCHLIT CRAWL</span><span style="color:var(--acc)">● LIVE</span></div>
-      <canvas id="p7" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
-    </div>
-  </article>
-  <article class="pcard" data-screen-label="Hunting Game" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card2);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
-    <div>
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">P.08 — GAME DEV</div>
-      <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Hunting Game</h3>
-      <p style="max-width:460px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Python hunting game with sound effects and a clean OOP architecture.</p>
-      <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ DESIGN</span> — object-oriented structure</div><div><span style="color:var(--acc2)">▸ POLISH</span> — sound effects</div></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">OOP</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">AUDIO</span></div>
-      <a href="https://github.com/waryoyo/hunting-game" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a>
-    </div>
-    <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
-      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">P.08 / HUNT SIM</span><span style="color:var(--acc)">● LIVE</span></div>
-      <canvas id="p8" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
+      <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">F.03 / RIDGE CLASSIFIER</span><span style="color:var(--acc)">● LIVE</span></div>
+      <canvas id="p1" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
     </div>
   </article>
 </section>
-
-<section id="teardown" data-screen-label="Teardown log" style="padding:0 4vw 14vh;box-sizing:border-box">
-  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 04</span><span>TEARDOWN LOG — WHEN MY OWN MACHINE IS THE PROJECT</span></div>
+<section id="archive" data-screen-label="Project archive" style="padding:14vh 4vw 10vh;box-sizing:border-box;background:var(--paper);position:relative;z-index:2;border-top:1.5px solid var(--ink)">
+  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 05B</span><span>ARCHIVE — SIX MORE BUILDS</span></div>
+  <h2 style="margin:0 0 3vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,5vw,4rem);line-height:1;letter-spacing:-.03em">The <span style="color:var(--acc)">archive</span>.</h2>
+  <p style="max-width:560px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.7);margin:0 0 4vh">Smaller and older builds. Open any row for the details, or filter by area.</p>
+  <div role="group" aria-label="Filter archive" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:3vh"><button type="button" class="chip" data-filter="all" aria-pressed="true">ALL <span>6</span></button><button type="button" class="chip" data-filter="cyber" aria-pressed="false">CYBERSECURITY <span>1</span></button><button type="button" class="chip" data-filter="ml" aria-pressed="false">ML <span>1</span></button><button type="button" class="chip" data-filter="systems" aria-pressed="false">SYSTEMS <span>2</span></button><button type="button" class="chip" data-filter="games" aria-pressed="false">GAMES <span>2</span></button></div>
+  <div id="arclist" style="border-top:1.5px solid var(--ink)">
+    <details class="arc" data-cat="cyber">
+      <summary><span class="ac">A.01</span><span class="at">Secure File Upload Service</span><span class="ao">Vulnerable vs. hardened file upload, side by side — an educational demo of how an upload endpoint gets exploited.</span><span class="ak">CYBERSECURITY</span><span class="ax" aria-hidden="true">+</span></summary>
+      <div class="ab"><div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:640px"><div><span style="color:var(--acc2)">▸ VULNERABLE</span> — a baseline service that trusts whatever it is sent</div><div><span style="color:var(--acc2)">▸ HARDENED</span> — MIME sniffing, ClamAV scanning, HMAC-signed downloads, per-IP rate limiting, randomised storage</div><div><span style="color:var(--acc2)">▸ DELIVERY</span> — FastAPI service containerised with Docker</div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 14px"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">FASTAPI</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">DOCKER</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CLAMAV</span></div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em"><span style="color:rgba(var(--ink-rgb),.55)">PRIVATE DEMO — ASK ME FOR A WALKTHROUGH</span></div></div>
+    </details>
+    <details class="arc" data-cat="ml">
+      <summary><span class="ac">A.02</span><span class="at">Multi-Aspect Sentiment Agent</span><span class="ao">Top 30 of 150 teams at the DeepX AI Competition, Nile University — sentiment scored per aspect, not per sentence.</span><span class="ak">ML / NLP</span><span class="ax" aria-hidden="true">+</span></summary>
+      <div class="ab"><div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:640px"><div><span style="color:var(--acc2)">▸ TASK</span> — “battery is great but screen scratches” → positive battery, negative screen</div><div><span style="color:var(--acc2)">▸ RESULT</span> — top 20% of the field</div><div><span style="color:var(--acc2)">▸ NEXT</span> — Arabic NLP — an underexplored niche I read natively</div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 14px"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">NLP</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">SCIKIT-LEARN</span></div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em"><span style="color:rgba(var(--ink-rgb),.55)">PRIVATE REPO</span></div></div>
+    </details>
+    <details class="arc" data-cat="systems">
+      <summary><span class="ac">A.03</span><span class="at">Virtual File System</span><span class="ao">A full-featured file system you can drive from a command line, a GUI, or over SSH.</span><span class="ak">SYSTEMS</span><span class="ax" aria-hidden="true">+</span></summary>
+      <div class="ab"><div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:640px"><div><span style="color:var(--acc2)">▸ INTERFACES</span> — CLI shell and a GUI over the same core</div><div><span style="color:var(--acc2)">▸ REMOTE</span> — SSH access to a running instance</div><div><span style="color:var(--acc2)">▸ OPERATIONS</span> — full file and directory operations</div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 14px"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">SSH</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CLI / GUI</span></div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em"><a href="https://github.com/HamedElgizery/VirtualFileSystem" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1.5px solid var(--acc)">VIEW ON GITHUB ↗</a></div></div>
+    </details>
+    <details class="arc" data-cat="systems">
+      <summary><span class="ac">A.04</span><span class="at">SysMonitor</span><span class="ao">Real-time CPU/GPU/temperature monitor with a GUI, Markdown reports, and a live web dashboard.</span><span class="ak">SYSTEMS</span><span class="ax" aria-hidden="true">+</span></summary>
+      <div class="ab"><div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:640px"><div><span style="color:var(--acc2)">▸ MONITORS</span> — CPU, GPU and temperature in real time</div><div><span style="color:var(--acc2)">▸ REPORTS</span> — Markdown reports plus a live Chart.js web dashboard</div><div><span style="color:var(--acc2)">▸ DELIVERY</span> — containerised with Docker</div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 14px"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">BASH</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">DOCKER</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CHART.JS</span></div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em"><a href="https://github.com/HamedElgizery/SysMonitor" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1.5px solid var(--acc)">VIEW ON GITHUB ↗</a></div></div>
+    </details>
+    <details class="arc" data-cat="games">
+      <summary><span class="ac">A.05</span><span class="at">Evil Dungeons</span><span class="ao">Dungeon-crawler with custom GLSL shaders and low-level graphics programming.</span><span class="ak">GAMES / GRAPHICS</span><span class="ax" aria-hidden="true">+</span></summary>
+      <div class="ab"><div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:640px"><div><span style="color:var(--acc2)">▸ GRAPHICS</span> — custom GLSL shaders written for the game</div><div><span style="color:var(--acc2)">▸ BUILD</span> — C++ project built with CMake</div><div><span style="color:var(--acc2)">▸ GENRE</span> — dungeon-crawler</div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 14px"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">C++</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">GLSL</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">CMAKE</span></div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em"><a href="https://github.com/waryoyo/EvilDungeons" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1.5px solid var(--acc)">VIEW ON GITHUB ↗</a></div></div>
+    </details>
+    <details class="arc" data-cat="games">
+      <summary><span class="ac">A.06</span><span class="at">Hunting Game</span><span class="ao">Python hunting game with sound effects and a clean OOP architecture.</span><span class="ak">GAMES</span><span class="ax" aria-hidden="true">+</span></summary>
+      <div class="ab"><div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:640px"><div><span style="color:var(--acc2)">▸ DESIGN</span> — object-oriented structure</div><div><span style="color:var(--acc2)">▸ POLISH</span> — sound effects</div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 14px"><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">PYTHON</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">OOP</span><span style="border:1.5px solid var(--ink);padding:4px 10px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em">AUDIO</span></div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em"><a href="https://github.com/waryoyo/hunting-game" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1.5px solid var(--acc)">VIEW ON GITHUB ↗</a></div></div>
+    </details>
+  </div>
+</section>
+<section id="teardown" data-screen-label="Teardown log" style="padding:10vh 4vw 12vh;box-sizing:border-box">
+  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">MORE</span><span>BEYOND THE CODE — TEARDOWN LOG, WHEN MY OWN MACHINE IS THE PROJECT</span></div>
   <div style="border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);box-shadow:8px 8px 0 rgba(var(--acc-rgb),.3)">
-    <div style="padding:14px 24px;border-bottom:1px solid rgba(var(--paper-rgb),.2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--accl)">$ journalctl --user -u dolph.machine --priority=warning</div>
+    <div style="padding:14px 24px;border-bottom:1px solid rgba(var(--paper-rgb),.2);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;color:var(--accl)">$ journalctl --user -u my.machine --priority=warning</div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
       <div class="fin" style="padding:clamp(20px,3vw,36px);border-right:1px solid rgba(var(--paper-rgb),.15)">
         <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.14em;color:#FF6B6B;margin-bottom:10px">INCIDENT — INFOSTEALER</div>
@@ -244,36 +248,6 @@ html,body{transition:background-color .35s,color .35s}
   </div>
 </section>
 
-<section id="log" data-screen-label="Log" style="padding:0 4vw 14vh;box-sizing:border-box">
-  <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 05</span><span>LOG — EXPERIENCE, EDUCATION, ACHIEVEMENTS, STACK</span></div>
-  <div style="border-top:1.5px solid var(--ink)">
-    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2025-07 → 2025-09<br><span style="color:rgba(var(--ink-rgb),.55)">MANIPAL, IN · VIA AIESEC</span></div>
-      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">Cybersecurity &amp; AI Intern — MAHE–ISAC CoE</h3><p style="margin:0;max-width:600px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Built fingerprint identification and signature verification ML systems, and a hardened file upload service (MIME validation, ClamAV, HMAC-signed downloads) under Dr. Srikanth Prabhu. Selected internationally through AIESEC; completion certificate from MIT Manipal.</p></div>
-    </div>
-        <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2022-09 → 2023-01<br><span style="color:rgba(var(--ink-rgb),.55)">CAIRO, EG</span></div>
-      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">Teaching Assistant — Ethos International School</h3><p style="margin:0;max-width:600px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Supported classroom management and gave academic guidance to students who needed extra support.</p></div>
-    </div>
-<div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2022 → 2026<br><span style="color:rgba(var(--ink-rgb),.55)">DUAL AWARD</span></div>
-      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">B.Sc. Computer Science — UoN (UK) × AAST Egypt</h3><p style="margin:0;max-width:600px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Graduation project: PrivGrad. No GPA listed — the work above is the transcript.</p></div>
-    </div>
-    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">STACK<br><span style="color:rgba(var(--ink-rgb),.55)">DAILY DRIVERS</span></div>
-      <div style="grid-column:span 2;min-width:240px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2.2;letter-spacing:.04em">PYTHON ── C++ ── C ── BASH ── JAVASCRIPT ── SQL<br>CYBERSECURITY ── ML ── NLP ── OPENCV ── SCIKIT-LEARN ── RL/PPO<br>IMAGE PROCESSING ── SQLITE ── DIGITAL LOGIC ── COMPUTER ARCHITECTURE<br>FASTAPI ── DOCKER ── LINUX ── GIT ── WIRESHARK ── SCAPY ── STREAMLIT ── EMBEDDED ── GODOT ── GLSL</div>
-    </div>
-        <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2025<br><span style="color:rgba(var(--ink-rgb),.55)">TOP 30 / 150 TEAMS</span></div>
-      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">DeepX AI Competition — Nile University, top 20%</h3><p style="margin:0;max-width:600px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Built a multi-aspect sentiment analysis NLP agent.</p></div>
-    </div>
-    <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">2025<br><span style="color:rgba(var(--ink-rgb),.55)">AIESEC · MANIPAL, IN</span></div>
-      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">International selection — on-site placement</h3><p style="margin:0;max-width:600px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Selected for an international cybersecurity internship through AIESEC.</p></div>
-    </div>
-  </div>
-</section>
-
 <section id="contact" data-screen-label="Contact" style="padding:0 4vw 10vh;box-sizing:border-box">
   <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:8px 8px 0 rgba(var(--acc2-rgb),.25)">
     <div style="display:flex;justify-content:space-between;padding:14px 24px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em"><span style="font-weight:700">FIG. 06 — INITIATE CONTACT</span><span style="color:var(--acc)">CH: OPEN</span></div>
@@ -281,15 +255,16 @@ html,body{transition:background-color .35s,color .35s}
       <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,7vw,5.5rem);line-height:1;letter-spacing:-.03em"><span style="display:block;overflow:hidden"><span class="rev" style="display:block;transform:translateY(110%)">Hiring for security, ML,</span></span><span style="display:block;overflow:hidden"><span class="rev" data-d="90" style="display:block;transform:translateY(110%);color:var(--acc)">or systems? Let's talk.</span></span></h2>
       <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:5vh">
         <button id="copybtn" type="button" style="background:var(--ink);color:var(--paper);border:none;padding:18px 36px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;font-weight:700;cursor:pointer;box-shadow:4px 4px 0 var(--acc)" style-hover="background:var(--acc2)">COPY EMAIL →</button>
+        <a href="Youssof_Ahmed_Aly_CV.pdf" download style="display:inline-block;background:var(--card);color:var(--ink);border:1.5px solid var(--ink);padding:16px 30px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;font-weight:700;box-shadow:4px 4px 0 var(--acc2)">DOWNLOAD CV ↓</a>
         <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2.2;letter-spacing:.06em">
           <a href="https://github.com/Dolphiny-1412" target="_blank" rel="noopener" style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">GITHUB ── DOLPHINY-1412 ↗</a>
           <a href="https://linkedin.com/in/youssof-ahmed-13bb33241" target="_blank" rel="noopener" style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">LINKEDIN ↗</a>
-          <a href="tel:+201016999843" style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">+20 101 699 9843</a>
+          <a href="Youssof_Ahmed_Aly_CV_full.pdf" download style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">FULL CV · 2 PAGES ↓</a>
         </div>
       </div>
     </div>
     <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:12px 24px;border-top:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;color:rgba(var(--ink-rgb),.55)">
-      <span>© 2026 YOUSSOF "DOLPH" AHMED ALY</span><span>SHEIKH ZAYED, EGYPT</span><span>$ make deploy — ZERO DEPENDENCIES</span>
+      <span>© 2026 YOUSSOF AHMED ALY</span><span>SHEIKH ZAYED, EGYPT</span><span>$ make deploy — ZERO DEPENDENCIES</span>
     </div>
   </div>
 </section>
@@ -297,6 +272,16 @@ html,body{transition:background-color .35s,color .35s}
 
 
 
+<script>
+(function(){function fix(){document.querySelectorAll('.pcard').forEach(function(c){c.style.top=Math.min(0,window.innerHeight-c.offsetHeight)+'px'})}
+window.addEventListener('load',fix);window.addEventListener('resize',fix);
+if(window.ResizeObserver){document.addEventListener('DOMContentLoaded',function(){var ro=new ResizeObserver(fix);document.querySelectorAll('.pcard').forEach(function(c){ro.observe(c)});fix()})}})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){var chips=document.querySelectorAll('.chip'),rows=document.querySelectorAll('.arc');
+chips.forEach(function(c){c.addEventListener('click',function(){var f=c.dataset.filter;chips.forEach(function(x){x.setAttribute('aria-pressed',String(x===c))});
+rows.forEach(function(r){r.style.display=(f==='all'||r.dataset.cat===f)?'':'none'})})})});
+</script>
 <script>
 (function(){
 var T={

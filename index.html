@@ -46,10 +46,10 @@ html,body{transition:background-color .35s,color .35s}
 .chip:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
 @media(max-width:820px){.hl{display:none}.arc summary{grid-template-columns:48px 1fr 24px}.arc .ao,.arc .ak{display:none}.arc .ab{padding-left:4px}}
 
-@media(max-width:900px){.pcard{position:relative !important;top:auto !important;min-height:0 !important;padding:12vh 5vw 8vh !important}}
+@media(max-width:900px){.pcard{position:relative !important;top:auto !important;min-height:0 !important;padding:12vh var(--gx) 8vh !important}}
 [id]{scroll-margin-top:72px}
 .cur{display:inline-block;width:0;position:relative}
-.cur::after{content:"";position:absolute;left:.06em;bottom:.1em;width:.52em;height:.09em;background:var(--acc2);animation:blink 1s step-end infinite}
+.cur::after{content:"";position:absolute;left:.06em;bottom:-.09em;width:.52em;height:.09em;background:var(--acc2);animation:blink 1s step-end infinite}
 .ic{width:1.15em;height:1.15em;fill:currentColor;flex:none}
 .ib{box-sizing:border-box;position:relative;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--ink);padding:5px 7px;min-height:30px;cursor:default;color:var(--ink)}
 .ib .ic{width:17px;height:17px}
@@ -59,6 +59,8 @@ html,body{transition:background-color .35s,color .35s}
 #mq1 .ic{width:1.45em;height:1.45em}
 .mi{display:inline-flex;align-items:center}
 div[style*="flex-direction:column"]{gap:0 !important}
+:root{--gx:56px}
+@media(max-width:820px){:root{--gx:28px}}
 </style>
 
 </head>
@@ -68,15 +70,15 @@ div[style*="flex-direction:column"]{gap:0 !important}
 
 
 <div id="pbar" style="position:fixed;top:0;left:0;right:0;height:3px;background:var(--acc2);transform:scaleX(0);transform-origin:left;z-index:900"></div>
-<nav data-screen-label="Nav" style="position:fixed;top:0;left:0;right:0;z-index:890;display:flex;justify-content:space-between;align-items:center;padding:14px 4vw;background:rgba(var(--paper-rgb),.92);backdrop-filter:blur(8px);border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em">
+<nav data-screen-label="Nav" style="position:fixed;top:0;left:0;right:0;z-index:890;display:flex;justify-content:space-between;align-items:center;padding:14px var(--gx);background:rgba(var(--paper-rgb),.92);backdrop-filter:blur(8px);border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em">
   <a href="#top" style="color:var(--ink);font-weight:700">YOUSSOF AHMED ALY</a>
   <div style="display:flex;gap:clamp(12px,2vw,24px);align-items:center">
-    <a class="hl" href="#about" style="color:var(--ink)">ABOUT</a><a class="hl" href="#education" style="color:var(--ink)">EDUCATION</a><a class="hl" href="#experience" style="color:var(--ink)">EXPERIENCE</a><a class="hl" href="#skills" style="color:var(--ink)">SKILLS</a><a class="hl" href="#projects" style="color:var(--ink)">PROJECTS</a><a href="Youssof_Ahmed_Aly_CV.pdf" download style="color:var(--acc);font-weight:700">CV ↓</a><a href="#contact" style="background:var(--ink);color:var(--paper);padding:8px 16px">CONTACT ▸</a>
+    <a class="hl" href="#about" style="color:var(--ink)">ABOUT</a><a class="hl" href="#education" style="color:var(--ink)">EDUCATION</a><a class="hl" href="#experience" style="color:var(--ink)">EXPERIENCE</a><a class="hl" href="#skills" style="color:var(--ink)">SKILLS</a><a class="hl" href="#projects" style="color:var(--ink)">PROJECTS</a><a href="Youssof_Ahmed_Aly_CV.pdf" target="_blank" rel="noopener" style="color:var(--acc);font-weight:700">CV ↗</a><a href="#contact" style="background:var(--ink);color:var(--paper);padding:8px 16px">CONTACT ▸</a>
   </div>
 </nav>
 
 <section id="about" data-screen-label="Summary / About me">
-<header id="top" data-screen-label="Hero" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:16vh 4vw 8vh;box-sizing:border-box">
+<header id="top" data-screen-label="Hero" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:16vh var(--gx) 8vh;box-sizing:border-box">
   <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 00</span><span>CYBERSECURITY — SHEIKH ZAYED, EG</span></div>
   <div aria-hidden="true" style="font-family:'JetBrains Mono',monospace;font-size:clamp(.9rem,1.6vw,1.2rem);color:var(--acc);margin:0 0 2vh;letter-spacing:.08em">~$</div>
     <h1 id="typed" style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.6rem,9vw,8rem);line-height:.98;letter-spacing:-.03em"><span class="tl" style="display:block">Every domain is a</span><span class="tl" style="display:block">system. <span style="color:var(--acc)">Take it apart.</span></span><span class="tl" style="display:block;color:var(--acc2)">Build it better</span></h1>
@@ -86,15 +88,15 @@ div[style*="flex-direction:column"]{gap:0 !important}
   </div>
 </header>
 
-<div data-screen-label="Marquee" style="border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);background:var(--ink);color:var(--paper)">
-  <div style="overflow:hidden;padding:14px 0;white-space:nowrap"><div id="mq1" style="display:inline-flex;will-change:transform"><span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(.95rem,2vw,1.4rem);letter-spacing:.06em;text-transform:uppercase;padding-right:.6em;display:inline-flex;align-items:center"><span>Cybersecurity</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C"><svg class="ic" aria-hidden="true"><use href="#i-c"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C++"><svg class="ic" aria-hidden="true"><use href="#i-cplusplus"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="TypeScript"><svg class="ic" aria-hidden="true"><use href="#i-typescript"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="React"><svg class="ic" aria-hidden="true"><use href="#i-react"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="FastAPI"><svg class="ic" aria-hidden="true"><use href="#i-fastapi"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>Reinforcement Learning</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Docker"><svg class="ic" aria-hidden="true"><use href="#i-docker"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="OpenCV"><svg class="ic" aria-hidden="true"><use href="#i-opencv"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="scikit-learn"><svg class="ic" aria-hidden="true"><use href="#i-scikitlearn"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Linux"><svg class="ic" aria-hidden="true"><use href="#i-linux"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Git"><svg class="ic" aria-hidden="true"><use href="#i-git"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>HPC</span><span style="padding:0 .8em;opacity:.55">✕</span><span>PPO</span><span style="padding:0 .8em;opacity:.55">✕</span><span>NLP</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Embedded</span><span style="padding:0 .8em;opacity:.55">✕</span><span>GLSL</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Secure Systems</span><span style="padding:0 .8em;opacity:.55">✕</span></span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(.95rem,2vw,1.4rem);letter-spacing:.06em;text-transform:uppercase;padding-right:.6em;display:inline-flex;align-items:center"><span>Cybersecurity</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C"><svg class="ic" aria-hidden="true"><use href="#i-c"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C++"><svg class="ic" aria-hidden="true"><use href="#i-cplusplus"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="TypeScript"><svg class="ic" aria-hidden="true"><use href="#i-typescript"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="React"><svg class="ic" aria-hidden="true"><use href="#i-react"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="FastAPI"><svg class="ic" aria-hidden="true"><use href="#i-fastapi"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>Reinforcement Learning</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Docker"><svg class="ic" aria-hidden="true"><use href="#i-docker"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="OpenCV"><svg class="ic" aria-hidden="true"><use href="#i-opencv"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="scikit-learn"><svg class="ic" aria-hidden="true"><use href="#i-scikitlearn"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Linux"><svg class="ic" aria-hidden="true"><use href="#i-linux"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Git"><svg class="ic" aria-hidden="true"><use href="#i-git"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>HPC</span><span style="padding:0 .8em;opacity:.55">✕</span><span>PPO</span><span style="padding:0 .8em;opacity:.55">✕</span><span>NLP</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Embedded</span><span style="padding:0 .8em;opacity:.55">✕</span><span>GLSL</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Secure Systems</span><span style="padding:0 .8em;opacity:.55">✕</span></span></div></div>
-  <div style="overflow:hidden;padding:12px 0;white-space:nowrap;border-top:1px solid rgba(var(--paper-rgb),.25)"><div id="mq2" style="display:inline-flex;will-change:transform">
+<div data-screen-label="Marquee" data-grid-box style="background:var(--ink);color:var(--paper);box-shadow:0 -1.5px 0 var(--ink),0 1.5px 0 var(--ink);margin-bottom:112px">
+  <div style="overflow:hidden;white-space:nowrap;height:56px;display:flex;align-items:center"><div id="mq1" style="display:inline-flex;will-change:transform"><span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(.95rem,2vw,1.4rem);letter-spacing:.06em;text-transform:uppercase;padding-right:.6em;display:inline-flex;align-items:center"><span>Cybersecurity</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C"><svg class="ic" aria-hidden="true"><use href="#i-c"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C++"><svg class="ic" aria-hidden="true"><use href="#i-cplusplus"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="TypeScript"><svg class="ic" aria-hidden="true"><use href="#i-typescript"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="React"><svg class="ic" aria-hidden="true"><use href="#i-react"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="FastAPI"><svg class="ic" aria-hidden="true"><use href="#i-fastapi"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>Reinforcement Learning</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Docker"><svg class="ic" aria-hidden="true"><use href="#i-docker"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="OpenCV"><svg class="ic" aria-hidden="true"><use href="#i-opencv"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="scikit-learn"><svg class="ic" aria-hidden="true"><use href="#i-scikitlearn"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Linux"><svg class="ic" aria-hidden="true"><use href="#i-linux"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Git"><svg class="ic" aria-hidden="true"><use href="#i-git"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>HPC</span><span style="padding:0 .8em;opacity:.55">✕</span><span>PPO</span><span style="padding:0 .8em;opacity:.55">✕</span><span>NLP</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Embedded</span><span style="padding:0 .8em;opacity:.55">✕</span><span>GLSL</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Secure Systems</span><span style="padding:0 .8em;opacity:.55">✕</span></span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(.95rem,2vw,1.4rem);letter-spacing:.06em;text-transform:uppercase;padding-right:.6em;display:inline-flex;align-items:center"><span>Cybersecurity</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C"><svg class="ic" aria-hidden="true"><use href="#i-c"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C++"><svg class="ic" aria-hidden="true"><use href="#i-cplusplus"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="TypeScript"><svg class="ic" aria-hidden="true"><use href="#i-typescript"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="React"><svg class="ic" aria-hidden="true"><use href="#i-react"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="FastAPI"><svg class="ic" aria-hidden="true"><use href="#i-fastapi"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>Reinforcement Learning</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Docker"><svg class="ic" aria-hidden="true"><use href="#i-docker"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="OpenCV"><svg class="ic" aria-hidden="true"><use href="#i-opencv"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="scikit-learn"><svg class="ic" aria-hidden="true"><use href="#i-scikitlearn"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Linux"><svg class="ic" aria-hidden="true"><use href="#i-linux"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Git"><svg class="ic" aria-hidden="true"><use href="#i-git"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>HPC</span><span style="padding:0 .8em;opacity:.55">✕</span><span>PPO</span><span style="padding:0 .8em;opacity:.55">✕</span><span>NLP</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Embedded</span><span style="padding:0 .8em;opacity:.55">✕</span><span>GLSL</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Secure Systems</span><span style="padding:0 .8em;opacity:.55">✕</span></span></div></div>
+  <div style="overflow:hidden;white-space:nowrap;height:28px;display:flex;align-items:center;box-shadow:inset 0 1px 0 rgba(var(--paper-rgb),.25)"><div id="mq2" style="display:inline-flex;will-change:transform">
     <span style="font-family:'JetBrains Mono',monospace;color:var(--accl);font-size:clamp(.75rem,1.4vw,1rem);letter-spacing:.16em;padding-right:.6em">PRIVGRAD —— MAHE–ISAC —— DEEPX AI COMPETITION —— FINGERPRINT ID —— SIGNATURE VERIFICATION —— SECURE UPLOADS —— PROTOCOL ANALYZER ——&nbsp;</span>
     <span style="font-family:'JetBrains Mono',monospace;color:var(--accl);font-size:clamp(.75rem,1.4vw,1rem);letter-spacing:.16em;padding-right:.6em">PRIVGRAD —— MAHE–ISAC —— DEEPX AI COMPETITION —— FINGERPRINT ID —— SIGNATURE VERIFICATION —— SECURE UPLOADS —— PROTOCOL ANALYZER ——&nbsp;</span>
   </div></div>
 </div>
 
-<div class="aboutbody" data-screen-label="About" style="padding:0 4vw 10vh;box-sizing:border-box">
+<div class="aboutbody" data-screen-label="About" style="padding:0 var(--gx) 10vh;box-sizing:border-box">
   <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 01</span><span>SUMMARY — ABOUT ME</span></div>
   <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;color:var(--acc2);margin-bottom:2vh">MAIN ROLE GOAL</div>
   <p style="margin:0 0 5vh;max-width:980px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.6rem,3.6vw,3rem);line-height:1.15;letter-spacing:-.02em">Computer Science graduate aiming for a <span style="color:var(--acc)">cybersecurity</span> role.</p>
@@ -102,19 +104,19 @@ div[style*="flex-direction:column"]{gap:0 !important}
 </div>
 </section>
 
-<section id="education" data-screen-label="Education" style="padding:0 4vw 12vh;box-sizing:border-box">
+<section id="education" data-screen-label="Education" style="padding:0 var(--gx) 12vh;box-sizing:border-box">
   <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 02</span><span>EDUCATION</span></div>
   <h2 style="margin:0 0 5vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1;letter-spacing:-.03em">Education</h2>
   <div style="border-top:1.5px solid var(--ink)">
     <div class="fin" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding:4vh 0;border-bottom:1.5px solid var(--ink)">
       <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">10/2022 – 07/2026<br><span style="color:rgba(var(--ink-rgb),.55)">DUAL AWARD</span></div>
-      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">B.Sc. Computer Science — University of Northampton (UK)</h3><p style="margin:0;max-width:600px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Dual award with the Arab Academy for Science, Technology &amp; Maritime Transport (AAST), Egypt.</p><p style="margin:12px 0 0;max-width:600px;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.8;letter-spacing:.04em;color:rgba(var(--ink-rgb),.6)">GRADUATION PROJECT — <a href="#privgrad" style="color:var(--acc);border-bottom:1.5px solid var(--acc)">AI-Driven HPC Cluster Scheduler</a></p></div>
+      <div style="grid-column:span 2;min-width:240px"><h3 style="margin:0 0 6px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.5rem">B.Sc. Computer Science — University of Northampton (UK)</h3><p style="margin:0;max-width:600px;font-size:.92rem;line-height:1.65;color:rgba(var(--ink-rgb),.7)">Dual award with the Arab Academy for Science, Technology &amp; Maritime Transport (AAST), Egypt.</p><p style="margin:12px 0 0;max-width:600px;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.8;letter-spacing:.04em;color:rgba(var(--ink-rgb),.6)">GRADUATION PROJECT — <a href="#privgrad" style="color:var(--acc);border-bottom:1.5px solid var(--acc)">AI-Driven HPC Cluster Scheduler ↓</a></p></div>
     </div>
 
   </div>
 </section>
 
-<section id="experience" data-screen-label="Experience" style="padding:0 4vw 12vh;box-sizing:border-box">
+<section id="experience" data-screen-label="Experience" style="padding:0 var(--gx) 12vh;box-sizing:border-box">
   <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 03</span><span>EXPERIENCE</span></div>
   <h2 style="margin:0 0 5vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1;letter-spacing:-.03em">Experience</h2>
   <div style="border-top:1.5px solid var(--ink)">
@@ -136,7 +138,7 @@ div[style*="flex-direction:column"]{gap:0 !important}
   </div>
 </section>
 
-<section id="skills" data-screen-label="Skills" style="padding:0 4vw 12vh;box-sizing:border-box">
+<section id="skills" data-screen-label="Skills" style="padding:0 var(--gx) 12vh;box-sizing:border-box">
   <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 04</span><span>SKILLS</span></div>
   <h2 style="margin:0 0 5vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,6vw,4.6rem);line-height:1;letter-spacing:-.03em">Skills</h2>
   <div role="group" aria-label="Filter skills by category" style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:3vh"><button type="button" class="chip" data-filter="all" aria-pressed="true">ALL <span>40</span></button><button type="button" class="chip" data-filter="security" aria-pressed="false">SECURITY <span>6</span></button><button type="button" class="chip" data-filter="ai" aria-pressed="false">AI/ML <span>8</span></button><button type="button" class="chip" data-filter="dev" aria-pressed="false">DEVELOPMENT <span>9</span></button><button type="button" class="chip" data-filter="data" aria-pressed="false">DATA <span>6</span></button><button type="button" class="chip" data-filter="systems" aria-pressed="false">SYSTEMS <span>8</span></button><button type="button" class="chip" data-filter="hardware" aria-pressed="false">HARDWARE <span>3</span></button></div>
@@ -146,48 +148,48 @@ div[style*="flex-direction:column"]{gap:0 !important}
 </section>
 
 <section id="projects" data-screen-label="Projects" style="box-sizing:border-box">
-  <div style="padding:0 4vw 8vh">
+  <div style="padding:0 var(--gx) 8vh">
     <div style="display:flex;align-items:center;gap:14px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;color:var(--acc2);margin-bottom:3vh"><span style="border:1.5px solid var(--acc2);padding:4px 10px">FIG. 05</span><span>PROJECTS — FEATURED</span></div>
     <h2 style="margin:0 0 3vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.4rem,7vw,6rem);line-height:.98;letter-spacing:-.03em"><span style="display:block;overflow:hidden"><span class="rev" style="display:block;transform:translateY(110%)">Three builds,</span></span><span style="display:block;overflow:hidden"><span class="rev" data-d="90" style="display:block;transform:translateY(110%);color:var(--acc)">in motion.</span></span></h2>
     <p style="max-width:520px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.7);margin:0">Three featured builds. Each card runs a small simulation of what the project does (illustrative, not real output).</p>
   </div>
   <div id="featured">
-<article class="pcard" id="privgrad" data-screen-label="AI-Driven HPC Cluster Scheduler" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
+<article class="pcard" id="privgrad" data-screen-label="AI-Driven HPC Cluster Scheduler" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh var(--gx) 10vh">
     <div>
       <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">F.01 — FEATURED · ML / REINFORCEMENT LEARNING</div>
       <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">AI-Driven HPC Cluster Scheduler</h3>
       <p style="max-width:480px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Graduation project (team of 5). A PPO reinforcement-learning agent that learns where to place HPC jobs, plus the platform and dashboard around it.</p>
       <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ AGENT</span> — PPO (Stable-Baselines3) in a gym-style cluster environment</div><div><span style="color:var(--acc2)">▸ PLATFORM</span> — FastAPI API, Celery + Redis, React/TypeScript dashboard</div></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span class="ib" role="img" tabindex="0" aria-label="Python" data-n="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="FastAPI" data-n="FastAPI"><svg class="ic" aria-hidden="true"><use href="#i-fastapi"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="Celery" data-n="Celery"><svg class="ic" aria-hidden="true"><use href="#i-celery"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="Redis" data-n="Redis"><svg class="ic" aria-hidden="true"><use href="#i-redis"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="React" data-n="React"><svg class="ic" aria-hidden="true"><use href="#i-react"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="TypeScript" data-n="TypeScript"><svg class="ic" aria-hidden="true"><use href="#i-typescript"/></svg></span><span class="ib tx">STABLE-BASELINES3</span></div>
-      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><a href="projects.html#privgrad" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">FULL DETAILS ▸</a><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(var(--ink-rgb),.55)">PRIVATE REPO — CODE NOT YET PUBLIC</span></div>
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><a href="projects.html#privgrad" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">SEE FULL DETAILS ON THE PROJECTS PAGE →</a><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(var(--ink-rgb),.55)">PRIVATE REPO — CODE NOT YET PUBLIC</span></div>
     </div>
     <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
       <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">F.01 / PPO SCHEDULER</span><span style="color:var(--acc)">● SIMULATION</span></div>
       <canvas id="vflag" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
     </div>
   </article>
-  <article class="pcard" data-screen-label="Cryptographic Protocol Analyzer" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card2);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
+  <article class="pcard" data-screen-label="Cryptographic Protocol Analyzer" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card2);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh var(--gx) 10vh">
     <div>
       <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">F.02 — FEATURED · NETWORK SECURITY</div>
       <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Cryptographic Protocol Analyzer</h3>
       <p style="max-width:480px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Rule-based PCAP analyzer. Flags potentially insecure protocols, deprecated TLS/SSL versions and plaintext credentials, each rated Critical to Low.</p>
       <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ INPUT</span> — .pcap / .pcapng files, parsed with Scapy</div><div><span style="color:var(--acc2)">▸ OUTPUT</span> — Streamlit + Plotly dashboard, CLI, CSV export</div><div><span style="color:var(--acc2)">▸ SCOPE</span> — offline and heuristic; no TLS decryption</div></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span class="ib" role="img" tabindex="0" aria-label="Python" data-n="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span class="ib tx">SCAPY</span><span class="ib" role="img" tabindex="0" aria-label="Streamlit" data-n="Streamlit"><svg class="ic" aria-hidden="true"><use href="#i-streamlit"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="Pandas" data-n="Pandas"><svg class="ic" aria-hidden="true"><use href="#i-pandas"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="Plotly" data-n="Plotly"><svg class="ic" aria-hidden="true"><use href="#i-plotly"/></svg></span></div>
-      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><a href="projects.html#analyzer" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">FULL DETAILS ▸</a></div>
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><a href="projects.html#analyzer" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">SEE FULL DETAILS ON THE PROJECTS PAGE →</a></div>
     </div>
     <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
       <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">F.02 / PACKET TRIAGE</span><span style="color:var(--acc)">● SIMULATION</span></div>
       <canvas id="p3" style="display:block;width:100%;height:clamp(240px,38vh,400px)"></canvas>
     </div>
   </article>
-  <article class="pcard" data-screen-label="Fingerprint Identification System" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh 4vw 10vh">
+  <article class="pcard" data-screen-label="Fingerprint Identification System" style="position:sticky;top:0;min-height:100vh;box-sizing:border-box;background:var(--card);border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:4vw;align-items:center;padding:14vh var(--gx) 10vh">
     <div>
       <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--acc2);letter-spacing:.12em;margin-bottom:2vh">F.03 — FEATURED · ML / BIOMETRICS</div>
       <h3 style="margin:0 0 2vh;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2rem,4.5vw,4rem);line-height:1;letter-spacing:-.02em">Fingerprint Identification System</h3>
       <p style="max-width:480px;font-size:1rem;line-height:1.7;color:rgba(var(--ink-rgb),.75);margin:0">Classifies fingerprints as arch, loop or whorl using image processing and machine learning. Built during the MAHE–ISAC internship.</p>
       <div style="display:flex;flex-direction:column;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;max-width:520px;margin:3vh 0 0"><div><span style="color:var(--acc2)">▸ PIPELINE</span> — OpenCV image processing → scikit-learn classifier</div></div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin:3vh 0"><span class="ib" role="img" tabindex="0" aria-label="Python" data-n="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="OpenCV" data-n="OpenCV"><svg class="ic" aria-hidden="true"><use href="#i-opencv"/></svg></span><span class="ib" role="img" tabindex="0" aria-label="scikit-learn" data-n="scikit-learn"><svg class="ic" aria-hidden="true"><use href="#i-scikitlearn"/></svg></span></div>
-      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><a href="projects.html#fingerprint" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">FULL DETAILS ▸</a><a href="https://github.com/Dolphiny-1412/fingerprint-identification" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a></div>
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap"><a href="projects.html#fingerprint" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">SEE FULL DETAILS ON THE PROJECTS PAGE →</a><a href="https://github.com/Dolphiny-1412/fingerprint-identification" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;border-bottom:1.5px solid var(--acc);padding-bottom:3px;color:var(--ink)">VIEW ON GITHUB ↗</a></div>
     </div>
     <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:6px 6px 0 rgba(var(--acc-rgb),.3)">
       <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em"><span style="font-weight:700">F.03 / RIDGE CLASSIFIER</span><span style="color:var(--acc)">● SIMULATION</span></div>
@@ -195,20 +197,20 @@ div[style*="flex-direction:column"]{gap:0 !important}
     </div>
   </article>
 </div>
-  <div style="padding:6vh 4vw 12vh;border-top:1.5px solid var(--ink);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.3rem,2.6vw,2rem);letter-spacing:-.02em">Six more builds on the projects page.</div><a href="projects.html" style="display:inline-block;background:var(--card);color:var(--ink);border:1.5px solid var(--ink);padding:16px 30px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;font-weight:700;box-shadow:4px 4px 0 var(--acc2)">ALL 9 PROJECTS ▸</a></div>
+  <div style="padding:6vh var(--gx) 12vh;border-top:1.5px solid var(--ink);display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.3rem,2.6vw,2rem);letter-spacing:-.02em">Six more builds on the projects page.</div><a href="projects.html" style="display:inline-block;background:var(--card);color:var(--ink);border:1.5px solid var(--ink);padding:16px 30px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;font-weight:700;box-shadow:4px 4px 0 var(--acc2)">ALL 9 PROJECTS ▸</a></div>
 </section>
-<section id="contact" data-screen-label="Contact" style="padding:0 4vw 10vh;box-sizing:border-box">
+<section id="contact" data-screen-label="Contact" style="padding:0 var(--gx) 10vh;box-sizing:border-box">
   <div style="border:1.5px solid var(--ink);background:var(--card);box-shadow:8px 8px 0 rgba(var(--acc2-rgb),.25)">
     <div style="display:flex;justify-content:space-between;padding:14px 24px;border-bottom:1.5px solid var(--ink);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em"><span style="font-weight:700">FIG. 06 — INITIATE CONTACT</span><span style="color:var(--acc)">CH: OPEN</span></div>
-    <div style="padding:clamp(32px,6vw,72px) clamp(24px,4vw,48px)">
+    <div style="padding:clamp(32px,6vw,72px) clamp(24px,var(--gx),48px)">
       <h2 style="margin:0;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(2.2rem,7vw,5.5rem);line-height:1;letter-spacing:-.03em"><span style="display:block;overflow:hidden"><span class="rev" style="display:block;transform:translateY(110%)">Hiring for cybersecurity?</span></span><span style="display:block;overflow:hidden"><span class="rev" data-d="90" style="display:block;transform:translateY(110%);color:var(--acc)">Let's talk.</span></span></h2>
       <div style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:5vh">
         <button id="copybtn" type="button" style="background:var(--ink);color:var(--paper);border:none;padding:18px 36px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;font-weight:700;cursor:pointer;box-shadow:4px 4px 0 var(--acc)" style-hover="background:var(--acc2)">COPY EMAIL →</button>
-        <a href="Youssof_Ahmed_Aly_CV.pdf" download style="display:inline-block;background:var(--card);color:var(--ink);border:1.5px solid var(--ink);padding:16px 30px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;font-weight:700;box-shadow:4px 4px 0 var(--acc2)">DOWNLOAD CV ↓</a>
+        <a href="Youssof_Ahmed_Aly_CV.pdf" target="_blank" rel="noopener" style="display:inline-block;background:var(--card);color:var(--ink);border:1.5px solid var(--ink);padding:16px 30px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;font-weight:700;box-shadow:4px 4px 0 var(--acc2)">VIEW CV ↗</a>
         <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2.2;letter-spacing:.06em">
           <a href="https://github.com/Dolphiny-1412" target="_blank" rel="noopener" style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">GITHUB ── DOLPHINY-1412 ↗</a>
           <a href="https://linkedin.com/in/youssof-ahmed-13bb33241" target="_blank" rel="noopener" style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">LINKEDIN ↗</a>
-          <a href="Youssof_Ahmed_Aly_CV_full.pdf" download style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">FULL CV · 2 PAGES ↓</a>
+          <a href="Youssof_Ahmed_Aly_CV_full.pdf" target="_blank" rel="noopener" style="display:block;width:fit-content;color:var(--ink);border-bottom:1.5px solid var(--acc)">FULL CV · 2 PAGES ↗</a>
         </div>
       </div>
     </div>
@@ -737,14 +739,15 @@ ready(function(){
 </script>
 <script>
 (function(){
-var U=28,timer=null,seen=[],cvs=document.createElement('canvas').getContext('2d');
+var U=28,timer=null,seen=[],boxSeen=[],cvs=document.createElement('canvas').getContext('2d');
 function ready(f){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f()}
 function num(v){return parseFloat(v)||0}
 function offsetOf(el){var dx=0,dy=0;for(var a=el;a&&a!==document.body&&a!==document.documentElement;a=a.parentElement){var t=getComputedStyle(a).transform;if(t&&t!=='none'){try{var m=new DOMMatrix(t);dx+=m.m41;dy+=m.m42}catch(e){}}}return {x:dx,y:dy}}
 function ownText(el){for(var n=el.firstChild;n;n=n.nextSibling){if(n.nodeType===3&&n.nodeValue.trim())return true}return false}
 function run(){
-  var skip='nav,button,.ib,.chip,.xbtn,svg,canvas,script,style,#toast,.cur,#mq1,#mq2';
+  var skip='nav,button,.ib,.chip,.xbtn,svg,canvas,script,style,#toast,.cur,#mq1,#mq2,[data-screen-label="Marquee"]';
   seen.forEach(function(e){e.style.translate='';if(e.__lh0!==undefined)e.style.lineHeight=e.__lh0});seen=[];
+  boxSeen.forEach(function(e){e.style.translate='';e.style.minHeight=e.__mh0||''});boxSeen=[];
   var cand=[].slice.call(document.body.querySelectorAll('div,p,h1,h2,h3,li,span,summary,a')).filter(function(el){
     if(el.closest(skip))return false;
     if(!(ownText(el)||el.classList.contains('tl')))return false;
@@ -756,7 +759,24 @@ function run(){
   var info=cand.map(function(el){var cs=getComputedStyle(el),fs=num(cs.fontSize),lh=cs.lineHeight==='normal'?fs*1.2:num(cs.lineHeight);
     var T=Math.max(U,Math.round(lh/U)*U);if(T<0.9*fs)T=Math.ceil(0.9*fs/U)*U;return {el:el,T:T}});
   info.forEach(function(i){if(i.el.__lh0===undefined)i.el.__lh0=i.el.style.lineHeight;i.el.style.lineHeight=i.T+'px'});
+  // boxes and rule lines: horizontal borders
+  var boxes=[].slice.call(document.body.querySelectorAll('div,section,article,details,aside,header,footer,main,li,ul')).filter(function(el){
+    if(el.hasAttribute('data-grid-box'))return true;
+    if(el.closest('nav,.ib,.chip,button,#toast,svg,[data-screen-label="Marquee"]'))return false;
+    var cs=getComputedStyle(el);
+    if(cs.display.indexOf('inline')===0||cs.position==='fixed'||cs.position==='absolute')return false;
+    return num(cs.borderTopWidth)>0||num(cs.borderBottomWidth)>0});
+  // boxes with a top and a bottom border get a height that is a multiple of the grid (inner boxes first)
+  boxes.slice().reverse().forEach(function(el){var cs=getComputedStyle(el);
+    if(!(num(cs.borderTopWidth)>0&&num(cs.borderBottomWidth)>0))return;
+    var H=el.getBoundingClientRect().height,rem=H%U;if(rem<0.5||U-rem<0.5)return;
+    var target=Math.ceil(H/U)*U,extra=cs.boxSizing==='border-box'?0:num(cs.paddingTop)+num(cs.paddingBottom)+num(cs.borderTopWidth)+num(cs.borderBottomWidth);
+    if(el.__mh0===undefined)el.__mh0=el.style.minHeight;el.style.minHeight=(target-extra)+'px';boxSeen.push(el)});
   var sy=window.scrollY,sx=window.scrollX,items=[],rowDone=[];
+  boxes.forEach(function(el){var r=el.getBoundingClientRect();if(!r.width&&!r.height)return;var cs=getComputedStyle(el),o=offsetOf(el),bt=num(cs.borderTopWidth),bb=num(cs.borderBottomWidth);
+    var edge=(bt>0||bb===0)?r.top+sy-o.y:r.bottom+sy-o.y-bb;
+    if(el.__mh0===undefined)el.__mh0=el.style.minHeight;if(boxSeen.indexOf(el)<0)boxSeen.push(el);
+    items.push({tgt:el,el:null,dx:0,dy:Math.round(edge/U)*U-edge})});
   info.forEach(function(i){var el=i.el,r=el.getBoundingClientRect();if(!r.width&&!r.height)return;
     var cs=getComputedStyle(el),o=offsetOf(el),fs=num(cs.fontSize),left=r.left+sx-o.x+num(cs.borderLeftWidth)+num(cs.paddingLeft),top=r.top+sy-o.y+num(cs.borderTopWidth)+num(cs.paddingTop);
     var dy=0,dx=0;
@@ -764,7 +784,7 @@ function run(){
       if(m.fontBoundingBoxAscent!==undefined){var base=top+(i.T-(m.fontBoundingBoxAscent+m.fontBoundingBoxDescent))/2+m.fontBoundingBoxAscent;dy=Math.round(base/U)*U-base}}
     if((cs.textAlign==='start'||cs.textAlign==='left')&&cs.direction==='ltr'){dx=Math.round(left/U)*U-left}
     var tgt=el,p=el.parentElement,pcs=p?getComputedStyle(p):null;
-    if(pcs&&pcs.display==='flex'&&pcs.flexDirection.indexOf('row')===0){
+    if(pcs&&pcs.display==='flex'&&pcs.flexDirection.indexOf('row')===0&&num(pcs.paddingTop)+num(pcs.paddingBottom)+num(pcs.borderTopWidth)+num(pcs.borderBottomWidth)===0){
       if(rowDone.indexOf(p)>=0)return;rowDone.push(p);tgt=p;
       var pr=p.getBoundingClientRect(),po=offsetOf(p),pl=pr.left+sx-po.x+num(pcs.borderLeftWidth)+num(pcs.paddingLeft);
       dx=(pcs.justifyContent==='center'||pcs.justifyContent==='flex-end'||pcs.justifyContent==='end')?0:Math.round(pl/U)*U-pl;
@@ -772,11 +792,12 @@ function run(){
     items.push({tgt:tgt,el:el,dx:dx,dy:dy})});
   var map=new Map();items.forEach(function(i){map.set(i.tgt,i)});
   items.forEach(function(i){var a=i.tgt.parentElement,anc=null;while(a){if(map.has(a)){anc=map.get(a);break}a=a.parentElement}
-    var ax=anc?anc.dx:0,ay=anc?anc.dy:0;i.tgt.style.translate=(i.dx-ax).toFixed(2)+'px '+(i.dy-ay).toFixed(2)+'px';
-    i.el.setAttribute('data-g','1');if(seen.indexOf(i.tgt)<0)seen.push(i.tgt)});
-  // restore line-height bookkeeping for targets that are wrappers
+    var ax=anc?anc.dx:0,ay=anc?anc.dy:0,nv=(i.dx-ax).toFixed(2)+'px '+(i.dy-ay).toFixed(2)+'px',pv=i.tgt.__tx;i.tgt.style.translate=nv;i.tgt.__tx=nv;
+    if(window.__snapAnimate&&pv&&pv!==nv&&i.tgt.animate&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){try{i.tgt.animate([{translate:pv},{translate:nv}],{duration:240,easing:'ease-out'})}catch(e){}}
+    if(i.el)i.el.setAttribute('data-g','1');if(seen.indexOf(i.tgt)<0&&boxSeen.indexOf(i.tgt)<0)seen.push(i.tgt)});
 }
 function schedule(){clearTimeout(timer);timer=setTimeout(run,90)}
+setTimeout(function(){window.__snapAnimate=true},1800);
 ready(function(){
   schedule();window.addEventListener('load',schedule);window.addEventListener('resize',schedule);
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(schedule);

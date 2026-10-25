@@ -49,7 +49,7 @@ html,body{transition:background-color .35s,color .35s}
 @media(max-width:900px){.pcard{position:relative !important;top:auto !important;min-height:0 !important;padding:12vh var(--gx) 8vh !important}}
 [id]{scroll-margin-top:72px}
 .cur{display:inline-block;width:0;position:relative}
-.cur::after{content:"";position:absolute;left:.06em;bottom:-.09em;width:.52em;height:.09em;background:var(--acc2);animation:blink 1s step-end infinite}
+.cur::after{content:"";position:absolute;left:.06em;bottom:calc(var(--cd,1.5px)*-1);width:.52em;height:.09em;background:var(--acc2);animation:blink 1s step-end infinite}
 .ic{width:1.15em;height:1.15em;fill:currentColor;flex:none}
 .ib{box-sizing:border-box;position:relative;display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--ink);padding:5px 7px;min-height:30px;cursor:default;color:var(--ink)}
 .ib .ic{width:17px;height:17px}
@@ -91,8 +91,8 @@ div[style*="flex-direction:column"]{gap:0 !important}
 <div data-screen-label="Marquee" data-grid-box style="background:var(--ink);color:var(--paper);box-shadow:0 -1.5px 0 var(--ink),0 1.5px 0 var(--ink);margin-bottom:112px">
   <div style="overflow:hidden;white-space:nowrap;height:56px;display:flex;align-items:center"><div id="mq1" style="display:inline-flex;will-change:transform"><span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(.95rem,2vw,1.4rem);letter-spacing:.06em;text-transform:uppercase;padding-right:.6em;display:inline-flex;align-items:center"><span>Cybersecurity</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C"><svg class="ic" aria-hidden="true"><use href="#i-c"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C++"><svg class="ic" aria-hidden="true"><use href="#i-cplusplus"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="TypeScript"><svg class="ic" aria-hidden="true"><use href="#i-typescript"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="React"><svg class="ic" aria-hidden="true"><use href="#i-react"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="FastAPI"><svg class="ic" aria-hidden="true"><use href="#i-fastapi"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>Reinforcement Learning</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Docker"><svg class="ic" aria-hidden="true"><use href="#i-docker"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="OpenCV"><svg class="ic" aria-hidden="true"><use href="#i-opencv"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="scikit-learn"><svg class="ic" aria-hidden="true"><use href="#i-scikitlearn"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Linux"><svg class="ic" aria-hidden="true"><use href="#i-linux"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Git"><svg class="ic" aria-hidden="true"><use href="#i-git"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>HPC</span><span style="padding:0 .8em;opacity:.55">✕</span><span>PPO</span><span style="padding:0 .8em;opacity:.55">✕</span><span>NLP</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Embedded</span><span style="padding:0 .8em;opacity:.55">✕</span><span>GLSL</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Secure Systems</span><span style="padding:0 .8em;opacity:.55">✕</span></span><span style="font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(.95rem,2vw,1.4rem);letter-spacing:.06em;text-transform:uppercase;padding-right:.6em;display:inline-flex;align-items:center"><span>Cybersecurity</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Python"><svg class="ic" aria-hidden="true"><use href="#i-python"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C"><svg class="ic" aria-hidden="true"><use href="#i-c"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="C++"><svg class="ic" aria-hidden="true"><use href="#i-cplusplus"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="TypeScript"><svg class="ic" aria-hidden="true"><use href="#i-typescript"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="React"><svg class="ic" aria-hidden="true"><use href="#i-react"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="FastAPI"><svg class="ic" aria-hidden="true"><use href="#i-fastapi"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>Reinforcement Learning</span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Docker"><svg class="ic" aria-hidden="true"><use href="#i-docker"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="OpenCV"><svg class="ic" aria-hidden="true"><use href="#i-opencv"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="scikit-learn"><svg class="ic" aria-hidden="true"><use href="#i-scikitlearn"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Linux"><svg class="ic" aria-hidden="true"><use href="#i-linux"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span class="mi" role="img" aria-label="Git"><svg class="ic" aria-hidden="true"><use href="#i-git"/></svg></span><span style="padding:0 .8em;opacity:.55">✕</span><span>HPC</span><span style="padding:0 .8em;opacity:.55">✕</span><span>PPO</span><span style="padding:0 .8em;opacity:.55">✕</span><span>NLP</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Embedded</span><span style="padding:0 .8em;opacity:.55">✕</span><span>GLSL</span><span style="padding:0 .8em;opacity:.55">✕</span><span>Secure Systems</span><span style="padding:0 .8em;opacity:.55">✕</span></span></div></div>
   <div style="overflow:hidden;white-space:nowrap;height:28px;display:flex;align-items:center;box-shadow:inset 0 1px 0 rgba(var(--paper-rgb),.25)"><div id="mq2" style="display:inline-flex;will-change:transform">
-    <span style="font-family:'JetBrains Mono',monospace;color:var(--accl);font-size:clamp(.75rem,1.4vw,1rem);letter-spacing:.16em;padding-right:.6em">PRIVGRAD —— MAHE–ISAC —— DEEPX AI COMPETITION —— FINGERPRINT ID —— SIGNATURE VERIFICATION —— SECURE UPLOADS —— PROTOCOL ANALYZER ——&nbsp;</span>
-    <span style="font-family:'JetBrains Mono',monospace;color:var(--accl);font-size:clamp(.75rem,1.4vw,1rem);letter-spacing:.16em;padding-right:.6em">PRIVGRAD —— MAHE–ISAC —— DEEPX AI COMPETITION —— FINGERPRINT ID —— SIGNATURE VERIFICATION —— SECURE UPLOADS —— PROTOCOL ANALYZER ——&nbsp;</span>
+    <span style="font-family:'JetBrains Mono',monospace;color:var(--accl);font-size:clamp(.75rem,1.4vw,1rem);letter-spacing:.16em;padding-right:.6em">PACKET ANALYSIS —— SECURE FILE HANDLING —— HARDENED SERVICES —— RULE-BASED DETECTION —— NETWORK SECURITY ——&nbsp;</span>
+    <span style="font-family:'JetBrains Mono',monospace;color:var(--accl);font-size:clamp(.75rem,1.4vw,1rem);letter-spacing:.16em;padding-right:.6em">PACKET ANALYSIS —— SECURE FILE HANDLING —— HARDENED SERVICES —— RULE-BASED DETECTION —— NETWORK SECURITY ——&nbsp;</span>
   </div></div>
 </div>
 
@@ -331,17 +331,27 @@ class Component extends DCLogic {
   }
   setupMarquee() {
     const t1 = this.$('#mq1'), t2 = this.$('#mq2');
-    if (this.rm) return;
+    if (this.rm || !t1 || !t2) return;
+    const fit = (t) => {
+      const unit = t.firstElementChild; if (!unit) return 0;
+      const w = unit.getBoundingClientRect().width; if (!w) return 0;
+      const need = Math.ceil(window.innerWidth / w) + 2;
+      while (t.children.length < need) { const c = unit.cloneNode(true); c.setAttribute('aria-hidden', 'true'); t.appendChild(c); }
+      return w;
+    };
+    let w1 = fit(t1), w2 = fit(t2);
+    const refit = () => { w1 = fit(t1) || w1; w2 = fit(t2) || w2; };
+    window.addEventListener('resize', refit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(refit);
     let x1 = 0, x2 = -1, vel = 0, ly = this.scrollTop();
     const base = this.props.marqueeSpeed ?? 0.9;
     const loop = () => {
       const y = this.scrollTop();
       vel += (Math.abs(y - ly) * 0.05 - vel) * 0.08; ly = y;
       const sp = base + Math.min(vel, 10);
-      const w1 = t1.scrollWidth / 2, w2 = t2.scrollWidth / 2;
       x1 -= sp; x2 += sp;
-      if (x1 <= -w1) x1 += w1;
-      if (x2 >= 0) x2 -= w2;
+      if (w1 && x1 <= -w1) x1 += w1;
+      if (w2 && x2 >= 0) x2 -= w2;
       t1.style.transform = 'translateX(' + x1 + 'px)';
       t2.style.transform = 'translateX(' + x2 + 'px)';
       requestAnimationFrame(loop);
@@ -730,7 +740,7 @@ ready(function(){
   if(rm){chars[chars.length-1].insertAdjacentElement('afterend',cur);return}
   chars[0].parentNode.insertBefore(cur,chars[0]);
   var i=0;
-  function step(){if(i>=chars.length)return;var c=chars[i];c.style.opacity='1';c.insertAdjacentElement('afterend',cur);i++;
+  function step(){if(i>=chars.length){setTimeout(function(){if(window.__fixCursor)window.__fixCursor()},340);return}var c=chars[i];c.style.opacity='1';c.insertAdjacentElement('afterend',cur);i++;
     var nx=chars[i],d=45+Math.random()*35;
     if(nx){if(nx.closest('.tl')!==c.closest('.tl'))d+=280;else if(nx.parentNode!==c.parentNode)d+=40}
     setTimeout(step,d)}
@@ -776,7 +786,7 @@ function run(){
   boxes.forEach(function(el){var r=el.getBoundingClientRect();if(!r.width&&!r.height)return;var cs=getComputedStyle(el),o=offsetOf(el),bt=num(cs.borderTopWidth),bb=num(cs.borderBottomWidth);
     var edge=(bt>0||bb===0)?r.top+sy-o.y:r.bottom+sy-o.y-bb;
     if(el.__mh0===undefined)el.__mh0=el.style.minHeight;if(boxSeen.indexOf(el)<0)boxSeen.push(el);
-    items.push({tgt:el,el:null,dx:0,dy:Math.round(edge/U)*U-edge})});
+    items.push({tgt:el,el:null,dx:0,dy:Math.round(Math.round(edge/U)*U-edge)})});
   info.forEach(function(i){var el=i.el,r=el.getBoundingClientRect();if(!r.width&&!r.height)return;
     var cs=getComputedStyle(el),o=offsetOf(el),fs=num(cs.fontSize),left=r.left+sx-o.x+num(cs.borderLeftWidth)+num(cs.paddingLeft),top=r.top+sy-o.y+num(cs.borderTopWidth)+num(cs.paddingTop);
     var dy=0,dx=0;
@@ -789,13 +799,15 @@ function run(){
       var pr=p.getBoundingClientRect(),po=offsetOf(p),pl=pr.left+sx-po.x+num(pcs.borderLeftWidth)+num(pcs.paddingLeft);
       dx=(pcs.justifyContent==='center'||pcs.justifyContent==='flex-end'||pcs.justifyContent==='end')?0:Math.round(pl/U)*U-pl;
     }else if(p&&p.children.length===1&&pcs.overflow!=='visible')tgt=p;
-    items.push({tgt:tgt,el:el,dx:dx,dy:dy})});
+    items.push({tgt:tgt,el:el,dx:Math.round(dx),dy:Math.round(dy)})});
   var map=new Map();items.forEach(function(i){map.set(i.tgt,i)});
   items.forEach(function(i){var a=i.tgt.parentElement,anc=null;while(a){if(map.has(a)){anc=map.get(a);break}a=a.parentElement}
     var ax=anc?anc.dx:0,ay=anc?anc.dy:0,nv=(i.dx-ax).toFixed(2)+'px '+(i.dy-ay).toFixed(2)+'px',pv=i.tgt.__tx;i.tgt.style.translate=nv;i.tgt.__tx=nv;
     if(window.__snapAnimate&&pv&&pv!==nv&&i.tgt.animate&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){try{i.tgt.animate([{translate:pv},{translate:nv}],{duration:240,easing:'ease-out'})}catch(e){}}
     if(i.el)i.el.setAttribute('data-g','1');if(seen.indexOf(i.tgt)<0&&boxSeen.indexOf(i.tgt)<0)seen.push(i.tgt)});
+  setTimeout(function(){if(window.__fixCursor)window.__fixCursor()},340);
 }
+window.__fixCursor=function(){var c=document.querySelector('.cur');if(!c)return;var r=c.getBoundingClientRect(),base=r.bottom+window.scrollY,g=Math.round(base/U)*U;c.style.setProperty('--cd',(g+1-base)+'px')};
 function schedule(){clearTimeout(timer);timer=setTimeout(run,90)}
 setTimeout(function(){window.__snapAnimate=true},1800);
 ready(function(){

@@ -6,11 +6,8 @@ Fonts load from Google Fonts. Six colour themes are built in (default: Dusk) and
 ## Files
 - `index.html` — home page
 - `projects.html` — all 9 projects, each expandable
-- `Youssof_Ahmed_Aly_CV.pdf` — one-page CV (the "Download CV" button)
-- `Youssof_Ahmed_Aly_CV_full.pdf` — two-page CV
+- `youssof-cv-final.pdf` — the CV (the nav "CV" link and the "Preview CV" button)
 - `.nojekyll` — tells GitHub Pages to serve the files as they are
-
-The CV files here have no phone number, because they are public. Keep the versions with your phone number for job applications.
 
 ## Deploy with GitHub Pages
 1. Create a repository named `Dolphiny-1412.github.io` (the site is then served at `https://dolphiny-1412.github.io/`).

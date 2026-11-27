@@ -280,7 +280,6 @@ function run(){
   var skip='nav,button,.ib,.chip,.xbtn,svg,canvas,script,style,#toast,.cur,#mq1,#mq2,[data-screen-label="Marquee"]';
   seen.forEach(function(e){e.style.translate='';if(e.__lh0!==undefined)e.style.lineHeight=e.__lh0});seen=[];
   boxSeen.forEach(function(e){e.style.translate='';e.style.minHeight=e.__mh0||''});boxSeen=[];
-  if(window.__fixCursor)window.__fixCursor();
   if(window.innerWidth<=900)return; // stacked single-column layouts are tight; decorative snapping can push neighbours into each other
   var cand=[].slice.call(document.body.querySelectorAll('div,p,h1,h2,h3,li,span,summary,a')).filter(function(el){
     if(el.closest(skip))return false;

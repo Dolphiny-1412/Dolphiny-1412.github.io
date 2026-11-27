@@ -221,6 +221,7 @@ b.onclick=function(){apply(k)};panel.appendChild(b)});
 var t=document.createElement('button');t.type='button';t.textContent='◐ THEME';t.setAttribute('aria-expanded','false');
 t.style.cssText='background:var(--ink);color:var(--paper);border:none;padding:10px 14px;font:inherit;letter-spacing:inherit;font-weight:700;cursor:pointer;box-shadow:3px 3px 0 var(--acc)';
 t.onclick=function(){var open=panel.hidden;panel.hidden=!open;panel.style.display=open?'flex':'none';t.setAttribute('aria-expanded',String(open))};
+var mqT=window.matchMedia('(max-width:600px)');function fitT(){if(mqT.matches){t.textContent='\u25D0';t.style.padding='10px 12px';t.setAttribute('aria-label','Theme')}else{t.textContent='\u25D0 THEME';t.style.padding='10px 14px';t.removeAttribute('aria-label')}}fitT();if(mqT.addEventListener)mqT.addEventListener('change',fitT);
 panel.style.display='none';
 box.appendChild(panel);box.appendChild(t);document.body.appendChild(box);
 var s='dusk';try{s=localStorage.getItem('pf-theme2')||s}catch(e){}apply(T[s]?s:'dusk');});

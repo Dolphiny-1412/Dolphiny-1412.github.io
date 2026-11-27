@@ -7,6 +7,9 @@ Fonts load from Google Fonts. Six colour themes are built in (default: Dusk) and
 - `index.html` — home page
 - `projects.html` — all 9 projects, each expandable
 - `youssof-cv-final.pdf` — the CV (the nav "CV" link and the "Preview CV" button)
+- `assets/` — real screenshots shown on the projects page
+- `404.html` — not-found page (GitHub Pages serves it automatically)
+- `robots.txt` and `sitemap.xml` — search-engine hints
 - `.nojekyll` — tells GitHub Pages to serve the files as they are
 
 ## Deploy with GitHub Pages
